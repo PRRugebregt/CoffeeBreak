@@ -8,7 +8,12 @@
 import Foundation
 import SwiftUI
 
-class Network {
+protocol Networkable {
+    func fetchCoffee(completionHandler: @escaping (_ items: [CoffeeList.CoffeeItem]) -> ())
+    func parseJson(data: Data) -> [CoffeeList.CoffeeItem]
+}
+
+class Network: Networkable {
     
     let urlString = "https://api.sampleapis.com/coffee/hot"
     

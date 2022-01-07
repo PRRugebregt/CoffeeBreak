@@ -30,22 +30,11 @@ struct FinishedCoffee: View {
 struct CoffeeMeter: View {
     var howManyCoffees = HowManyCoffees.shared
     
-    var warning : WarningMessage {
-        switch howManyCoffees.count {
-        case 1:
-            return WarningMessage.one
-        case 2:
-            return WarningMessage.two
-        case 3:
-            return WarningMessage.three
-        case 4:
-            return WarningMessage.four
-        default:
-            return WarningMessage.one
-        }
+    var warning : String {
+        return howManyCoffees.warning
     }
     var body: some View {
-        Text(warning.rawValue)
+        Text(warning)
             .onAppear {
                 howManyCoffees.count += 1
                 print(howManyCoffees.count)

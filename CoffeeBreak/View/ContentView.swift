@@ -27,7 +27,6 @@ struct ContentView: View {
                                 Text(item.description)
                                     .font(.body)
                             }
-                            .padding()
                             NavigationLink {
                                 DetailView(item: item)
                             } label: {

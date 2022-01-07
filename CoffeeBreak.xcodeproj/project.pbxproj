@@ -21,6 +21,7 @@
 		0119D264278839FE0055DE40 /* FetchedCoffees.json in Resources */ = {isa = PBXBuildFile; fileRef = 0119D263278839FE0055DE40 /* FetchedCoffees.json */; };
 		0119D26627883A2A0055DE40 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D26527883A2A0055DE40 /* MockNetwork.swift */; };
 		0119D26827883FC40055DE40 /* HowManyCoffees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D26727883FC40055DE40 /* HowManyCoffees.swift */; };
+		0119D26D2788C54E0055DE40 /* MockNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D26C2788C54E0055DE40 /* MockNetworkTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		0119D263278839FE0055DE40 /* FetchedCoffees.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchedCoffees.json; sourceTree = "<group>"; };
 		0119D26527883A2A0055DE40 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
 		0119D26727883FC40055DE40 /* HowManyCoffees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyCoffees.swift; sourceTree = "<group>"; };
+		0119D26C2788C54E0055DE40 /* MockNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,16 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				0119D22F278723EE0055DE40 /* CoffeeBreakApp.swift */,
-				0119D231278723EE0055DE40 /* ContentView.swift */,
+				0119D2692788BEC80055DE40 /* Model */,
+				0119D26A2788BEDD0055DE40 /* View */,
+				0119D26B2788BEF80055DE40 /* ViewModel */,
 				0119D233278723EF0055DE40 /* Assets.xcassets */,
 				0119D235278723EF0055DE40 /* Preview Content */,
-				0119D259278725000055DE40 /* CoffeeItem.swift */,
-				0119D25B278725A40055DE40 /* CoffeeMachine.swift */,
-				0119D25D2787272F0055DE40 /* Network.swift */,
-				0119D25F278837940055DE40 /* FinishedCoffee.swift */,
 				0119D263278839FE0055DE40 /* FetchedCoffees.json */,
-				0119D26527883A2A0055DE40 /* MockNetwork.swift */,
-				0119D26727883FC40055DE40 /* HowManyCoffees.swift */,
 			);
 			path = CoffeeBreak;
 			sourceTree = "<group>";
@@ -135,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				0119D240278723EF0055DE40 /* CoffeeBreakTests.swift */,
+				0119D26C2788C54E0055DE40 /* MockNetworkTests.swift */,
 			);
 			path = CoffeeBreakTests;
 			sourceTree = "<group>";
@@ -146,6 +145,34 @@
 				0119D24C278723EF0055DE40 /* CoffeeBreakUITestsLaunchTests.swift */,
 			);
 			path = CoffeeBreakUITests;
+			sourceTree = "<group>";
+		};
+		0119D2692788BEC80055DE40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0119D259278725000055DE40 /* CoffeeItem.swift */,
+				0119D25D2787272F0055DE40 /* Network.swift */,
+				0119D26527883A2A0055DE40 /* MockNetwork.swift */,
+				0119D26727883FC40055DE40 /* HowManyCoffees.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0119D26A2788BEDD0055DE40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0119D231278723EE0055DE40 /* ContentView.swift */,
+				0119D25F278837940055DE40 /* FinishedCoffee.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0119D26B2788BEF80055DE40 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0119D25B278725A40055DE40 /* CoffeeMachine.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0119D26D2788C54E0055DE40 /* MockNetworkTests.swift in Sources */,
 				0119D241278723EF0055DE40 /* CoffeeBreakTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

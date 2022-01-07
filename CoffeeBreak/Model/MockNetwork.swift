@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class MockNetwork {
+class MockNetwork: Networkable {
     
     let mainBundle = Bundle.main.bundleURL
     let fetchedCoffees : Data

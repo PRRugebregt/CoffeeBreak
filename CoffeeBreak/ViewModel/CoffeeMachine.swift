@@ -11,10 +11,12 @@ import SwiftUI
 class CoffeeMachine: ObservableObject {
     
     @Published var model: CoffeeList?
-    var items : [CoffeeList.CoffeeItem]?
+    var items: [CoffeeList.CoffeeItem]?
+    var network: Networkable
     
     init() {
-        MockNetwork().fetchCoffee { items in
+        network = MockNetwork()
+        network.fetchCoffee { items in
             DispatchQueue.main.async {
                 print("loaded model")
                 self.model = CoffeeList(items: items)

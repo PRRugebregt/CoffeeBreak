@@ -16,5 +16,19 @@ enum WarningMessage: String {
 
 class HowManyCoffees {
     static let shared = HowManyCoffees()
-    var count = 1
+    var warning = WarningMessage.one.rawValue
+    var count = 1 {
+        didSet {
+            switch count {
+            case 2:
+                warning = WarningMessage.two.rawValue
+            case 3:
+                warning = WarningMessage.three.rawValue
+            case 4...Int.max:
+                warning = WarningMessage.four.rawValue
+            default:
+                warning = WarningMessage.one.rawValue
+            }
+        }
+    }
 }
