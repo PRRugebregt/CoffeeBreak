@@ -14,6 +14,13 @@
 		0119D241278723EF0055DE40 /* CoffeeBreakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D240278723EF0055DE40 /* CoffeeBreakTests.swift */; };
 		0119D24B278723EF0055DE40 /* CoffeeBreakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D24A278723EF0055DE40 /* CoffeeBreakUITests.swift */; };
 		0119D24D278723EF0055DE40 /* CoffeeBreakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D24C278723EF0055DE40 /* CoffeeBreakUITestsLaunchTests.swift */; };
+		0119D25A278725000055DE40 /* CoffeeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D259278725000055DE40 /* CoffeeItem.swift */; };
+		0119D25C278725A40055DE40 /* CoffeeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D25B278725A40055DE40 /* CoffeeMachine.swift */; };
+		0119D25E2787272F0055DE40 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D25D2787272F0055DE40 /* Network.swift */; };
+		0119D260278837940055DE40 /* FinishedCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D25F278837940055DE40 /* FinishedCoffee.swift */; };
+		0119D264278839FE0055DE40 /* FetchedCoffees.json in Resources */ = {isa = PBXBuildFile; fileRef = 0119D263278839FE0055DE40 /* FetchedCoffees.json */; };
+		0119D26627883A2A0055DE40 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D26527883A2A0055DE40 /* MockNetwork.swift */; };
+		0119D26827883FC40055DE40 /* HowManyCoffees.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0119D26727883FC40055DE40 /* HowManyCoffees.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		0119D246278723EF0055DE40 /* CoffeeBreakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeBreakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0119D24A278723EF0055DE40 /* CoffeeBreakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeBreakUITests.swift; sourceTree = "<group>"; };
 		0119D24C278723EF0055DE40 /* CoffeeBreakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeBreakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0119D259278725000055DE40 /* CoffeeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeItem.swift; sourceTree = "<group>"; };
+		0119D25B278725A40055DE40 /* CoffeeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMachine.swift; sourceTree = "<group>"; };
+		0119D25D2787272F0055DE40 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0119D25F278837940055DE40 /* FinishedCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedCoffee.swift; sourceTree = "<group>"; };
+		0119D263278839FE0055DE40 /* FetchedCoffees.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FetchedCoffees.json; sourceTree = "<group>"; };
+		0119D26527883A2A0055DE40 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
+		0119D26727883FC40055DE40 /* HowManyCoffees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyCoffees.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,13 @@
 				0119D231278723EE0055DE40 /* ContentView.swift */,
 				0119D233278723EF0055DE40 /* Assets.xcassets */,
 				0119D235278723EF0055DE40 /* Preview Content */,
+				0119D259278725000055DE40 /* CoffeeItem.swift */,
+				0119D25B278725A40055DE40 /* CoffeeMachine.swift */,
+				0119D25D2787272F0055DE40 /* Network.swift */,
+				0119D25F278837940055DE40 /* FinishedCoffee.swift */,
+				0119D263278839FE0055DE40 /* FetchedCoffees.json */,
+				0119D26527883A2A0055DE40 /* MockNetwork.swift */,
+				0119D26727883FC40055DE40 /* HowManyCoffees.swift */,
 			);
 			path = CoffeeBreak;
 			sourceTree = "<group>";
@@ -231,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0119D264278839FE0055DE40 /* FetchedCoffees.json in Resources */,
 				0119D237278723EF0055DE40 /* Preview Assets.xcassets in Resources */,
 				0119D234278723EF0055DE40 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0119D25E2787272F0055DE40 /* Network.swift in Sources */,
 				0119D232278723EE0055DE40 /* ContentView.swift in Sources */,
+				0119D25A278725000055DE40 /* CoffeeItem.swift in Sources */,
 				0119D230278723EE0055DE40 /* CoffeeBreakApp.swift in Sources */,
+				0119D26627883A2A0055DE40 /* MockNetwork.swift in Sources */,
+				0119D26827883FC40055DE40 /* HowManyCoffees.swift in Sources */,
+				0119D25C278725A40055DE40 /* CoffeeMachine.swift in Sources */,
+				0119D260278837940055DE40 /* FinishedCoffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

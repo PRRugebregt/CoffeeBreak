@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct CoffeeBreakApp: App {
+    let coffeeMachine = CoffeeMachine()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(coffeeMachine: coffeeMachine)
         }
     }
 }
