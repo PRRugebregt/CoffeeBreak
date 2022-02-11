@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+// For testing purposes and reducing API requests to the server I've created this MockNetwork class
+
 class MockNetwork: Networkable {
     
     let mainBundle = Bundle.main.bundleURL
